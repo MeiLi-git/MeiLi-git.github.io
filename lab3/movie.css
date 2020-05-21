@@ -1,0 +1,100 @@
+*{
+    font-size: 100%;
+  
+}
+body {
+    background-image: url(./skeleton_files/background.png);
+    font-size: 8pt;
+    font-family: verdana,Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#banner{
+    background-image: url(./skeleton_files/bannerbg.png);
+    background-repeat: repeat-x;
+}
+h1{
+    font-size: 24pt;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px 0 #999999;
+    text-align: center;
+    font-weight: bold;
+}
+
+#main-content{
+    width: 800px;
+    margin: auto;
+    border-color: gray;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+#rating{
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    vertical-align:top;
+}
+#rottenbig{
+    background-image: url(./skeleton_files/rbg.png);
+    background-repeat: repeat-x;
+}
+
+#leftpanel{
+    width: 520px;
+    padding: 1em;
+    column-count: 2;
+    column-gap: 10px;
+    position: relative;
+}
+
+q{
+    font-weight: bold;
+    font-size: 8pt;
+}
+#leftpanel>p:nth-child(odd){
+    background-color:#E8DC9B;
+    border: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#leftpanel img{
+    float: left;
+    margin-right: 5px;
+}
+#leftpanel>p:nth-child(even){
+    padding-bottom: 20px;
+}
+#rightpanel{
+    background-color: #A2B964;
+    width: 250px;
+    float: right;
+}
+#overview-table{
+    padding-top: 10pt;
+    font-family: Arial, Helvetica, sans-serif sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+}
+#overview-table dt{
+    padding-left: 15px;
+}
+#overview-table dd{
+    font-weight: normal;
+}
+#footer{
+    background-color: #A2B964;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    height: 30px;
+    margin: auto;
+    position:absolute;
+    bottom:0;
+    width:550px;
+}
