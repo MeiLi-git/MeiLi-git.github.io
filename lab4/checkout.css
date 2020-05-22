@@ -18,34 +18,43 @@ h1{
     text-decoration: underline;
     border-radius: 5px;
 }
-
-a{
-    color: #A4A400;
-}
-.mainImage {
-   width: 30%;
-   height: 20%;
-}
-a:link {
-    text-decoration: none;
-}
-  
-a:hover {
-    text-decoration: underline;
-    color:blue;
-}
 p::first-letter {
     font-size: 1.5em;
 }
-form div span::before{
-   content: "\A";
-   white-space: pre;
-}
-form div span{
-    text-align: right;
+form label{
     display: inline-block;
-    width: 600px;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+}
+.creditcard label{
+    display: inline;
+}
+.creditcard{
+    margin-bottom: 20px;
+}
+input[type="submit"]{
+    font-weight: bold;
+    margin-top: 10px;
 }
 form div{
-    text-align: left;
+    padding-top: 3px;
+}
+.note{
+    color:grey;
+    padding-left: 3px;
+}
+textarea{
+    width: 50%;
+    height: 80px;
+    margin-left: 30px;
+}
+#iagree{
+    width: 50%;
+    text-align: center;
+    
+}
+#submit{
+    width: 50%;
+    text-align: center;
 }

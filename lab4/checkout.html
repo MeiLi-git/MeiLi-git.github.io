@@ -10,36 +10,35 @@
         <form>
             <h1>Personal Details</h1>
             <div>
-                <span>First Name:</span><input name="firstName" required/>*
-                <span>Last Name:</span><input name="lastName" required/>*
-                <span>Phone:</span><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>*
-                <label>Format: 123-456-7890</label>
-                <span>Email:</span><input name="email" required/>*
+                <label>First Name:</label><input name="firstName" required/><span class="note">*</span></div>
+                <div><label>Last Name:</label><input name="lastName" required/><span class="note">*</span></div>
+                <div><label>Phone:</label><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><span class="note">* Format: 123-456-7890</span></div>
+                <div><label>Email:</label><input name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required/><span class="note">*</span></div>
             </div>
             <h1>Shipping Address</h1>
             <div>
-                <span>Address:</span><input name="street"/>
-                <span>City:</span><input name="city"/>
-                <span>State:</span><input name="state"/>
-                <span>Zip:</span><input name="zip"/>
+                <div><label>Address:</label><input name="street"/></div>
+                <div><label>City:</label><input name="city"/></div>
+                <div><label>State:</label><input name="state"/></div>
+                <div><label>Zip:</label><input name="zip"/></div>
             </div>
             <h1>Billing Address</h1>
             <div>
-                <span>Address:</span><input name="street2"/>
-                <span>City:</span><input name="city2"/>
-                <span>State:</span><input name="state2"/>
-                <span>Zip:</span><input name="zip2"/>
+                <div><label>Address:</label><input name="street2"/></div>
+                <div><label>City:</label><input name="city2"/></div>
+                <div><label>State:</label><input name="state2"/></div>
+                <div><label>Zip:</label><input name="zip2"/></div>
             </div>
             <h1>Payment Method</h1>
             <div>
-                <fieldset>
+                <fieldset class="creditcard">
                     <legend>Credit Cards</legend>
                     <label><input type="radio" name="cc" value="visa"/>Visa</label>
                     <label><input type="radio" name="cc" value="mastercard"/>Master Card</label>
                     <label><input type="radio" name="cc" value="americanexpress"/>American Express</label>
                 </fieldset>
-                <span>Credit Card Number:</span><input name="ccno"/>
-                <span>Expiration(MM/YYYY):</span>
+                <div><label>Credit Card Number:</label><input name="ccno"/></div>
+                <div><label>Expiration(MM/YYYY):</label>
                     <select name="expmonth">
                         <option>01</option>
                         <option>02</option>
@@ -58,25 +57,29 @@
                         <option>2020</option>
                         <option>2021</option>
                     </select>
-                <span>Credit Card Number:</span><input name="ccno"/>
+                    </div>
+                <div><label>Security Code</label><input name="secode"/></div>
             </div>
             <h1>Agreement</h1>
             <div>
-                <label>Please check here to confirm the agreement.</label>
-                <input type="radio" name="agree" value ="agree" />Yes
-                <input type="radio" name="agree" value ="disagree" checked/>No
+                <div id="agreement">
+                    <textarea disabled>This Agreement contains description of the terms and conditions that will regulate your use of the software as a service Interactive Online HTML and CSS Courses subject to conditions of a simple (non-exclusive) license.</textarea>
+                    <div id="iagree"><span>I agree to the terms of service.</span>
+                        <input type="radio" name="agree" value ="agree" />Yes
+                        <input type="radio" name="agree" value ="disagree" checked/>No
+                    </div>
+                </div>
             </div>
-            <input type="submit"/>
+            <div id="submit"><input type="submit"/></div>
         </form>
-
         <p>
-            <a href="https://validator.w3.org/check/referer"> 
-               <img src="../image/html5_validator.png" alt="Validate" /> 
-            </a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS! CSS!"/>
-            </a>
-         </p>
+                <a href="https://validator.w3.org/check/referer"> 
+                <img src="../image/html5_validator.png" alt="Validate" /> 
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS! CSS!"/>
+                </a>
+        </p>
          
     </body>
 </html>
