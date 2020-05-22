@@ -29,7 +29,7 @@ h1{
     border-width: 4px;
     border-radius: 20px;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 }
 #rating{
     font-size: 48pt;
@@ -46,8 +46,6 @@ h1{
 #leftpanel{
     width: 520px;
     padding: 1em;
-    column-count: 2;
-    column-gap: 10px;
     position: relative;
 }
 
@@ -55,7 +53,7 @@ q{
     font-weight: bold;
     font-size: 8pt;
 }
-#leftpanel>p:nth-child(odd){
+#leftpanel p:nth-child(odd){
     background-color:#E8DC9B;
     border: solid;
     border-width: 2px;
@@ -67,16 +65,16 @@ q{
     float: left;
     margin-right: 5px;
 }
-#leftpanel>p:nth-child(even){
+#leftpanel p:nth-child(even){
     padding-bottom: 20px;
 }
 #rightpanel{
     background-color: #A2B964;
     width: 250px;
     float: right;
+    
 }
 #overview-table{
-    padding-top: 10pt;
     font-family: Arial, Helvetica, sans-serif sans-serif;
     font-size: 8pt;
     font-weight: bold;
@@ -92,9 +90,17 @@ q{
     text-align: center;
     font-weight: bold;
     font-size: 13px;
-    height: 30px;
-    margin: auto;
-    position:absolute;
-    bottom:0;
-    width:550px;
+    width:100%;
+    clear:both;
+}
+#footer p{
+    display: inline-block;
+}
+#column1,#column2{
+    float: left;
+    width: 47%;
+    padding-left: 2%;
+}
+@media screen and (max-width: 800px) {
+    #rightpanel {float: none;width: auto;}
 }
