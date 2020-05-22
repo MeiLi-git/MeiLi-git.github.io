@@ -1,0 +1,51 @@
+*{
+    font-size: 100%;
+  
+}
+body {
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+}
+h1{
+    background-color: #F0F0F0;
+    color:#A4A400;
+    font-family: 'Lucida Sans Unicode', 'Helvetica', Arial, sans-serif;
+    text-align: left;
+    font-size: 18pt;
+    font-style: normal;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+a{
+    color: #A4A400;
+}
+.mainImage {
+   width: 30%;
+   height: 20%;
+}
+a:link {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+    color:blue;
+}
+p::first-letter {
+    font-size: 1.5em;
+}
+form div span::before{
+   content: "\A";
+   white-space: pre;
+}
+form div span{
+    text-align: right;
+    display: inline-block;
+    width: 600px;
+}
+form div{
+    text-align: left;
+}

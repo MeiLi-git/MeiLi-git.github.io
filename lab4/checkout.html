@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href ="checkout.css" type="text/css" rel="stylesheet"/>
+        <title>Check out form</title>
+    </head>
+
+    <body>
+        <p>Thanks for purchasing. We are now ready to help you check out.</p>
+        <form>
+            <h1>Personal Details</h1>
+            <div>
+                <span>First Name:</span><input name="firstName" required/>*
+                <span>Last Name:</span><input name="lastName" required/>*
+                <span>Phone:</span><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>*
+                <label>Format: 123-456-7890</label>
+                <span>Email:</span><input name="email" required/>*
+            </div>
+            <h1>Shipping Address</h1>
+            <div>
+                <span>Address:</span><input name="street"/>
+                <span>City:</span><input name="city"/>
+                <span>State:</span><input name="state"/>
+                <span>Zip:</span><input name="zip"/>
+            </div>
+            <h1>Billing Address</h1>
+            <div>
+                <span>Address:</span><input name="street2"/>
+                <span>City:</span><input name="city2"/>
+                <span>State:</span><input name="state2"/>
+                <span>Zip:</span><input name="zip2"/>
+            </div>
+            <h1>Payment Method</h1>
+            <div>
+                <fieldset>
+                    <legend>Credit Cards</legend>
+                    <label><input type="radio" name="cc" value="visa"/>Visa</label>
+                    <label><input type="radio" name="cc" value="mastercard"/>Master Card</label>
+                    <label><input type="radio" name="cc" value="americanexpress"/>American Express</label>
+                </fieldset>
+                <span>Credit Card Number:</span><input name="ccno"/>
+                <span>Expiration(MM/YYYY):</span>
+                    <select name="expmonth">
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <select name="expyear">
+                        <option>2020</option>
+                        <option>2021</option>
+                    </select>
+                <span>Credit Card Number:</span><input name="ccno"/>
+            </div>
+            <h1>Agreement</h1>
+            <div>
+                <label>Please check here to confirm the agreement.</label>
+                <input type="radio" name="agree" value ="agree" />Yes
+                <input type="radio" name="agree" value ="disagree" checked/>No
+            </div>
+            <input type="submit"/>
+        </form>
+
+        <p>
+            <a href="https://validator.w3.org/check/referer"> 
+               <img src="../image/html5_validator.png" alt="Validate" /> 
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS! CSS!"/>
+            </a>
+         </p>
+         
+    </body>
+</html>
