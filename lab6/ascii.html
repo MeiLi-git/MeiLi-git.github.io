@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mei Li's homepage</title>
+        <link href="./resources/ascii.css" type="text/css" rel="stylesheet">
+        <script src="./resources/animations.js"></script>
+        <script src="./resources/ascii.js"></script>
+    </head>
+    <body>
+        <h1>CS472: ASCII Animation Viewer</h1>
+        <div id="textarea">
+            <textarea rows="20" cols="80" id="output"></textarea>
+        </div>
+
+        <div id="menu">
+            <div>
+                <fieldset>
+                    <legend>Play Controls:</legend>
+                    <input type="button" value="Start" id="start"/>
+                    <input type="button" value="Stop" id="stop" disabled/>
+                </fieldset>
+                <fieldset>
+                    <legend>Animation:</legend>
+                    <select name="animation" id="animation">
+                        <option>Blank</option>
+                        <option>Exercise</option>
+                        <option>Juggler</option>
+                        <option>Bike</option>
+                        <option>Dive</option>
+                        <option>Custom</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <select id="size">
+                        <option value="tiny">Tiny</option>    
+                        <option value="small">Small</option>   
+                        <option value="medium" selected>Medium</option>   
+                        <option value="large">Large</option>   
+                        <option value="extralarge">Extra Large</option>  
+                        <option value="xxl">XXL</option>    
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Speed:</legend>
+                    <label><input type="checkbox" id="checkbox"/>Turbo</label>
+                </fieldset>
+            </div>
+        </div>
+        
+        <div id="validators">
+            <div><a href="https://validator.w3.org/check/referer"> 
+                <img src="../image/html5_validator.png" alt="Validate" /></a>
+            </div>
+            <div>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS! CSS!"/>
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>       
