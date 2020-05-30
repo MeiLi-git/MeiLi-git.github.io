@@ -1,0 +1,18 @@
+body {
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+}
+
+label{
+ 
+    padding-right: 10px;
+}
+div{
+    padding-top: 10px;
+}
+input[type="button"]{
+    font-family: Georgia, Garamond, sans-serif;
+    background-color: lightgreen;
+}

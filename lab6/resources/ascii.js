@@ -1,3 +1,8 @@
+"use strict";
+
+let i = 0;//global variable for changing different frames
+let id; //timer
+
 function getAnimation(){
     let ani = document.getElementById("animation");
     return ani.options[ani.selectedIndex].text;
@@ -30,8 +35,9 @@ function stop(){
     document.getElementById("start").disabled = false;
     document.getElementById("animation").disabled = false;
 }
+
 function start(){
-    i = 0;//global variable for changing different frame
+    i = 0;
     play();
 }
 
@@ -53,6 +59,5 @@ function playPart(parts, n){
     document.getElementById("output").value = parts[i%n];
     i++;
 }
-
 
 window.onload = init;
