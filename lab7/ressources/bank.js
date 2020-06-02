@@ -2,20 +2,20 @@
 
 (function(){
     var account = function (){
-        var type = '';
+        var type2 = '';
         var balance = '';
         function createAccount(t, b){
-            this.type = t;
+            this.type2 = t;
             this.balance = b;
         };
         function getType(){
-            return this.type;
+            return this.type2;
         };
         function getBalance(){
             return this.balance;
         };
         function toString(){
-            return "Account Name: "+this.type + " Balance: " + this.balance;
+            return "Account Name: "+this.type2 + " Balance: " + this.balance;
         }
         return {createAccount, getType, getBalance, toString};
     };
