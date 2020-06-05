@@ -1,0 +1,32 @@
+*{
+    font-size: 100%;
+  
+}
+body {
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+}
+
+ul{
+    list-style-type: decimal;
+}
+.post-title{
+    color: indianred;
+}
+.commentor{
+    color: green;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 3px;
+    margin: 5px;
+    display: inline;
+}
+div{
+    margin: 5px;
+}
+.comments{
+    display: block;
+    margin: 10px;
+}
